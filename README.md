@@ -8,7 +8,7 @@ This is Tensorflow version compared with https://github.com/joshua-wu/deepfakes_
     cuDNN 7.6.2
     Python 3.6.12
 ## How to run:
-    1. create file : checkpoint
+    1. Create file : checkpoint
     2. Download dataset : https://anonfiles.com/p7w3m0d5be/face-swap.zip
     3. Put cage and trump in to data file
     4. python train_v1.py
