@@ -237,7 +237,7 @@ if __name__ == "__main__":
     
 #    print("Download video with url: {}".format(args.url))
 #    download_video(args.url, start=args.start, stop=args.stop)
-    download_video("https://www.youtube.com/watch?v=720O_yBLrTs", start=600, stop=626) #trump
+    download_video("https://www.youtube.com/watch?v=720O_yBLrTs", start=743, stop=763) #trump
 #    download_video("https://www.youtube.com/watch?v=JdA9_mtXYME&t=35s", start=20, stop=30) #cage
     
     print("Process video")    
