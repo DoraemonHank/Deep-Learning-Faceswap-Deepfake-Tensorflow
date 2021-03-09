@@ -1,6 +1,6 @@
 # Faceswap-Deepfake-Tensorflow
 ## Version 1
-This is Tensorflow version compared with https://github.com/joshua-wu/deepfakes_faceswap which using Keras.
+This is Tensorflow version refer to https://github.com/joshua-wu/deepfakes_faceswap which using Keras.
 ![image](https://github.com/DoraemonHank/Faceswap-Deepfake-Tensorflow/blob/main/image/output.jpg)
 ## Demo
 trump to cage   
