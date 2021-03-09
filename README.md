@@ -4,7 +4,7 @@ This is Tensorflow version compared with https://github.com/joshua-wu/deepfakes_
 ![image](https://github.com/DoraemonHank/Faceswap-Deepfake-Tensorflow/blob/main/image/output.jpg)
 ## Demo
 trump to cage   
-![image](https://github.com/DoraemonHank/Faceswap-Deepfake-Tensorflow/blob/main/image/z0nng-51crs.gif)
+![image](https://github.com/DoraemonHank/Faceswap-Deepfake-Tensorflow/blob/main/image/afyx7-zdfcc.gif)
 <br>
 <br>
 cage to trump
