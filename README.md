@@ -3,7 +3,13 @@
 This is Tensorflow version compared with https://github.com/joshua-wu/deepfakes_faceswap which using Keras.
 ![image](https://github.com/DoraemonHank/Faceswap-Deepfake-Tensorflow/blob/main/image/output.jpg)
 ## Demo
+trump to cage   
 ![image](https://github.com/DoraemonHank/Faceswap-Deepfake-Tensorflow/blob/main/image/3lydk-7rxhm.gif)
+<br>
+<br>
+cage to trump
+<br>
+![image](https://github.com/DoraemonHank/Faceswap-Deepfake-Tensorflow/blob/main/image/x6l5w-gcv3n.gif)        
 ## Requirements:
     Tensorflow-GPU 1.15
     CUDA 10.0
