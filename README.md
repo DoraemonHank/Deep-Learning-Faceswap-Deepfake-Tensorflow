@@ -19,6 +19,7 @@ cage to trump
     1. Create file : checkpoint
     2. Download dataset: https://anonfiles.com/p7w3m0d5be/face-swap.zip
     3. Put cage and trump in to data file
-    4. python train_v1.py
+    4. Training : python train_v1.py
+    5. Download the video then swap the face : python predict_video.py
 
 
