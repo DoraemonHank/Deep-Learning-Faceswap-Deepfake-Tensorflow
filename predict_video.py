@@ -81,7 +81,7 @@ def face_swap(orig_image, down_scale,sess):
             # predict faceswap using encoder A
 #            figure = autoencoder_A.predict(test_images)
 
-            figure = sess.run(pred_B, feed_dict={X: test_images})
+            figure = sess.run(pred_A, feed_dict={X: test_images})
     
             new_face = numpy.clip(numpy.squeeze(figure[0]) * 255.0, 0, 255).astype('uint8')
             new_face = new_face[:, :, ::-1].copy() 
@@ -235,7 +235,7 @@ if __name__ == "__main__":
     
 #    print("Download video with url: {}".format(args.url))
 #    download_video(args.url, start=args.start, stop=args.stop)
-    download_video("https://www.youtube.com/watch?v=kOvd4h70PXw", start=124, stop=160)
+    download_video("https://www.youtube.com/watch?v=JdA9_mtXYME&t=35s", start=20, stop=30)
     
     print("Process video")    
     process_video("./temp/src_video.mp4", "output.mp4")
