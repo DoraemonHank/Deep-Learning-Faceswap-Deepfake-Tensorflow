@@ -21,10 +21,10 @@ from utils import get_tf_images
 
 from models import Autoencoder_v1
 
-# python predict_video.py --url="https://www.youtube.com/watch?v=kOvd4h70PXw" --start=120 --stop=160 --gif=False #trump
+# python predict_video.py --url="https://www.youtube.com/watch?v=720O_yBLrTs" --start=120 --stop=160 --gif=False #trump
 # python predict_video.py --url="https://www.youtube.com/watch?v=QDXPAr7LxPs&t=1s" --start=0 --stop=60 --gif=False #cage
 
-
+cage_to_trump = False
 saved_ckpt_path = './checkpoint/'
 img_size = 64
 channels = 3
@@ -80,8 +80,10 @@ def face_swap(orig_image, down_scale,sess):
     
             # predict faceswap using encoder A
 #            figure = autoencoder_A.predict(test_images)
-
-            figure = sess.run(pred_A, feed_dict={X: test_images})
+            if(cage_to_trump):
+                figure = sess.run(pred_A, feed_dict={X: test_images})
+            else:
+                figure = sess.run(pred_B, feed_dict={X: test_images})
     
             new_face = numpy.clip(numpy.squeeze(figure[0]) * 255.0, 0, 255).astype('uint8')
             new_face = new_face[:, :, ::-1].copy() 
@@ -235,7 +237,8 @@ if __name__ == "__main__":
     
 #    print("Download video with url: {}".format(args.url))
 #    download_video(args.url, start=args.start, stop=args.stop)
-    download_video("https://www.youtube.com/watch?v=JdA9_mtXYME&t=35s", start=20, stop=30)
+    download_video("https://www.youtube.com/watch?v=720O_yBLrTs", start=600, stop=626) #trump
+#    download_video("https://www.youtube.com/watch?v=JdA9_mtXYME&t=35s", start=20, stop=30) #cage
     
     print("Process video")    
     process_video("./temp/src_video.mp4", "output.mp4")
